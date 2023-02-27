@@ -18,12 +18,7 @@ import java.util.List;
 @Log4j2
 @Service
 public class GoogleZoneService implements ZoneService {
-
-    /**
-     * zone 객체
-     * sdk경우 items 제외하고 바로 호출 가능 ex) zone.getRegion();
-     * sample: { kind=compute#zoneList, id=projects/mindful-future-353103/zones, items[ id=2231, name=us-east1-b, region=https://www.googleapis.com/compute/v1/projects/mindful-future-353103/regions/us-east1 ] }
-     */
+    
     private static final String AUTH_URI = "https://accounts.google.com/o/oauth2/auth";
     private static final String TOKEN_URI = "https://oauth2.googleapis.com/token";
     private static final String AUTH_PROVIDER_URL= "https://www.googleapis.com/oauth2/v1/certs";
