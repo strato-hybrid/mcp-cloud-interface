@@ -17,12 +17,6 @@ import java.util.List;
 public class GoogleRegionService implements RegionService {
 
 
-    /**
-     * 리전 객체
-     * sdk경우 items 제외하고 바로 호출 가능 ex) region.getZonesList();
-     * sample: { kind=compute#regionList, id=projects/mindful-future-353103/regions, items[ id=1220, name=asia-east1, zones["https://www.googleapis.com/compute/v1/projects/mindful-future-353103/zones/asia-east1-a", "https://www.googleapis.com/compute/v1/projects/mindful-future-353103/zones/asia-east1-b",
-     *         "https://www.googleapis.com/compute/v1/projects/mindful-future-353103/zones/asia-east1-c"] ] }
-     */
     private static final String AUTH_URI = "https://accounts.google.com/o/oauth2/auth";
     private static final String TOKEN_URI = "https://oauth2.googleapis.com/token";
     private static final String AUTH_PROVIDER_URL= "https://www.googleapis.com/oauth2/v1/certs";
